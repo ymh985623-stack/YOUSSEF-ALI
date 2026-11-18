@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>YOUSSEF ALI | MY BROTHER ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{--gold:#d7b36b;--light:#f3dfb2;--bg:#080808}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:#eee;font-family:Cairo,sans-serif;overflow-x:hidden}
+body.en{direction:ltr}
+#stars{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#a77a3022,transparent 55%);z-index:0}
+header,main,footer{position:relative;z-index:1}
+button,a{font-family:inherit}
+a{text-decoration:none;color:inherit}
+header{position:fixed;top:0;width:100%;padding:15px 6%;display:flex;justify-content:space-between;align-items:center;background:#080808c9;backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid #d7b36b20}
+.logo{font-family:'Playfair Display';color:var(--gold);font-size:20px;letter-spacing:2px}
+.actions{display:flex;gap:8px}
+.small-btn{background:#15130f;border:1px solid #d7b36b55;color:var(--light);padding:8px 13px;border-radius:30px;font-size:12px}
+.hero{min-height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;padding:130px 20px 80px}
+.hero-inner{max-width:850px}
+.eyebrow{letter-spacing:5px;color:var(--gold);font-size:11px}
+.hero h1{font:clamp(48px,11vw,105px) 'Playfair Display';color:var(--light);margin:25px 0;text-shadow:0 0 40px #d7b36b33}
+.hero h1 span{display:block;font:600 20px Cairo;color:#ddd;letter-spacing:5px;margin-top:18px}
+.line{height:2px;width:75px;background:var(--gold);margin:25px auto;box-shadow:0 0 15px var(--gold)}
+.hero p{font-size:16px;color:#aaa;line-height:2.5;max-width:650px;margin:auto}
+.btn{display:inline-block;padding:13px 27px;border-radius:40px;background:var(--gold);color:#090909;font-weight:800;font-size:13px;margin:25px 5px;transition:.3s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 30px #d7b36b55}
+.btn.outline{background:transparent;color:var(--light);border:1px solid var(--gold)}
+section{padding:90px 7%;max-width:1150px;margin:auto}
+.heading{text-align:center;margin-bottom:40px}
+.heading small{color:var(--gold);letter-spacing:4px}
+.heading h2{font:clamp(32px,6vw,48px) 'Playfair Display';color:var(--light);margin:12px 0}
+.heading p{color:#888;font-size:13px}
+.message{background:linear-gradient(145deg,#19150e,#0d0d0d);border:1px solid #d7b36b44;border-radius:20px;padding:clamp(24px,6vw,55px);margin-bottom:25px;position:relative;overflow:hidden}
+.message:after{content:"“";position:absolute;top:-65px;left:20px;font:200px Georgia;color:#d7b36b0c}
+.message h3{color:var(--gold);font-size:22px;margin-bottom:20px}
+.message p{color:#ccc;line-height:2.5;font-size:15px;margin-bottom:15px}
+.message strong{color:var(--light)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.card{padding:28px;background:#111;border:1px solid #d7b36b30;border-radius:16px;transition:.4s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .icon{font-size:30px;margin-bottom:15px}
+.card h3{color:var(--gold);margin-bottom:12px}
+.card p{font-size:13px;color:#aaa;line-height:2.2}
+.quote{text-align:center;padding:85px 20px;background:radial-gradient(ellipse,#241b0e,#080808 70%);border-block:1px solid #d7b36b22}
+.quote h2{font:clamp(30px,7vw,60px) 'Playfair Display';color:var(--light);margin-bottom:25px}
+.quote p{max-width:650px;margin:auto;color:#aaa;line-height:2.5}
+.timeline{border-right:1px solid #d7b36b66;margin:25px 15px;padding-right:25px}
+.event{margin:25px 0;position:relative}
+.event:before{content:"";position:absolute;right:-31px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 15px var(--gold)}
+.event h3{color:var(--gold);margin-bottom:8px}
+.event p{color:#aaa;font-size:14px;line-height:2}
+.counter{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+.counter div{background:#15120d;border:1px solid #d7b36b44;padding:18px;min-width:90px;border-radius:12px;text-align:center}
+.counter b{display:block;font:32px 'Playfair Display';color:var(--light)}
+.counter span{font-size:11px;color:#999}
+.final{text-align:center;padding:100px 20px}
+.final h2{font:clamp(38px,9vw,75px) 'Playfair Display';color:var(--gold)}
+.final p{max-width:680px;margin:25px auto;color:#bbb;line-height:2.5}
+footer{text-align:center;padding:40px 15px;background:#050505;border-top:1px solid #d7b36b22;color:#777;font-size:11px;line-height:2.5}
+.reveal{opacity:0;transform:translateY(30px);transition:1s}
+.reveal.show{opacity:1;transform:translateY(0)}
+#intro{position:fixed;inset:0;background:#050505;z-index:100;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:20px;transition:1s}
+#intro.hide{opacity:0;visibility:hidden}
+#intro h1{font:clamp(40px,10vw,85px) 'Playfair Display';color:var(--light)}
+#intro p{color:var(--gold);margin-top:20px;letter-spacing:3px;font-size:12px}
+#intro button{margin-top:35px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:13px 30px;border-radius:40px}
+@media(max-width:600px){.cards{grid-template-columns:1fr}header{padding:13px 4%}.logo{font-size:15px}.small-btn{padding:7px 9px;font-size:10px}section{padding:75px 6%}.hero p{font-size:14px}}
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<div id="intro">
+ <p>AN UNFORGETTABLE BROTHERHOOD</p>
+ <h1>YOUSSEF ALI</h1>
+ <div class="line"></div>
+ <p>مش مجرد صاحب.. ده أخ ❤️</p>
+ <button onclick="enter()">افتح الموقع واكتشف الحكاية ←</button>
+</div>
+
+<header>
+ <div class="logo">YA. BROTHERHOOD</div>
+ <div class="actions">
+  <button class="small-btn" onclick="changeLang()" id="lang">EN</button>
+  <button class="small-btn" onclick="music()">♫ موسيقى</button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">A SPECIAL MESSAGE FOR YOU</div>
+  <h1>YOUSSEF ALI<span>أَخِي الَّذِي لَمْ تَلِدْهُ أُمِّي ❤️</span></h1>
+  <div class="line"></div>
+  <p>في ناس كتير بنقابلها في حياتنا، وفي ناس وجودها بيكون مختلف.. ناس مش مجرد أصحاب، دول بيبقوا إخوات وأهل وسند. والنهارده الموقع ده معمول علشان شخص غالي، اسمه يوسف علي.</p>
+  <a class="btn" href="#letter">اقرأ رسالتي ليك ❤️</a>
+  <a class="btn outline" href="#memories">اكتشف الحكاية</a>
+ </div>
+</section>
+
+<section id="letter" class="reveal">
+ <div class="heading">
+  <small>01 — A LETTER FROM THE HEART</small>
+  <h2>رسالة ليك يا يوسف ❤️</h2>
+  <p>كلام يمكن مش بعرف أقوله كل يوم</p>
+ </div>
+ <div class="message">
+  <h3>يا يوسف، اسمعني شوية..</h3>
+  <p>أنا عامل الموقع ده علشان أقولك كلام يمكن مش بعرف أقوله في الكلام العادي. عايزك تعرف إنك شخص غالي عندي جدًا، وإن وجودك في حياتي حاجة أنا مقدّرها ومش باعتبرها حاجة عادية.</p>
+  <p>مش كل واحد بنضحك معاه يبقى صاحب، ومش كل واحد بنقضي معاه وقت يبقى أخ. الأخ الحقيقي هو اللي بتحس معاه إنك على طبيعتك، اللي تقدر تهزر معاه من غير حساب، وتتكلم معاه من غير ما تفكر هيفهمك إزاي.</p>
+  <p>ويمكن أحلى حاجة في الصحوبية إنك تلاقي حد تقدر تشاركه تفاصيل يومك، تضحكوا على أبسط حاجة، وتفتكروا مواقف محدش غيركم هيفهم معناها.</p>
+  <p>أنا مش بكتب الكلام ده علشان مناسبة معينة، أنا بكتبه علشان ببساطة إنت تستاهل تعرف إن ليك مكانة حلوة عندي.</p>
+  <strong>ربنا يديم الود والمحبة يا أخويا، ويفرح قلبك دايمًا ❤️</strong>
+ </div>
+</section>
+
+<section class="reveal">
+ <div class="heading">
+  <small>02 — MORE THAN A FRIEND</small>
+  <h2>إنت مش مجرد صاحب</h2>
+  <p>في فرق كبير بين صاحب وأخ</p>
+ </div>
+ <div class="cards">
+  <div class="card"><div class="icon">🤝</div><h3>إنت أخ وسند</h3><p>الجدعنة مش بالكلام الكتير، الجدعنة بالمواقف وبالاحترام وبإن الواحد يفضل مقدّر اللي قدامه. ودي من أجمل الحاجات اللي بتخلي الصحوبية ليها قيمة.</p></div>
+  <div class="card"><div class="icon">😂</div><h3>ضحك وذكريات</h3><p>أحلى حاجة في الصحاب إن أبسط قعدة ممكن تتحول لذكرى تفضل تضحكنا سنين. وكل موقف صغير ممكن يبقى حكاية كبيرة بينا.</p></div>
+  <div class="card"><div class="icon">❤️</div><h3>غلاوة من القلب</h3><p>في ناس ليها معزة مش محتاجة شرح، مجرد وجودهم بيفرق. وإنت من الناس اللي الواحد يتمنى ليها الخير من قلبه.</p></div>
+  <div class="card"><div class="icon">👑</div><h3>تستاهل كل خير</h3><p>أتمنى أشوفك دايمًا في أحسن حال، ناجح ومبسوط ومحقق كل حاجة نفسك فيها. متقللش من نفسك أبدًا.</p></div>
+ </div>
+</section>
+
+<div class="quote reveal">
+ <h2>الأخوّة مش بالدم بس.. ❤️</h2>
+ <p>في ناس بنختارها تبقى من أهلنا، مش علشان بينا نفس الاسم أو نفس البيت، لكن علشان بينا عشرة ومواقف واحترام ومحبة. ودي حاجة غالية جدًا.</p>
+</div>
+
+<section id="memories" class="reveal">
+ <div class="heading">
+  <small>03 — OUR MEMORIES</small>
+  <h2>ذكريات لسه جاية</h2>
+  <p>لسه العمر قدامنا وفيه حكايات كتير</p>
+ </div>
+ <div class="timeline">
+  <div class="event"><h3>أيام الضحك 😂</h3><p>المواقف اللي بنفتكرها ونفضل نضحك عليها حتى لو عدّى عليها وقت طويل.</p></div>
+  <div class="event"><h3>أيام الجدعنة 🤝</h3><p>المواقف اللي بتبين معدن كل واحد، واللي بتخلي العِشرة أغلى.</p></div>
+  <div class="event"><h3>أحلى الخروجات 🌟</h3><p>مش مهم المكان قد ما المهم الناس اللي معاك، لأن الصحبة الحلوة بتخلي أي مكان جميل.</p></div>
+  <div class="event"><h3>اللي لسه جاي 👑</h3><p>ذكريات جديدة ونجاحات وأيام أحلى بإذن الله، ولسه في حكايات كتير مستنيانا.</p></div>
+ </div>
+</section>
+
+<section class="reveal">
+ <div class="heading">
+  <small>04 — A WISH FOR YOU</small>
+  <h2>دعوة من قلبي ليك</h2>
+ </div>
+ <div class="message">
+  <p>يا رب يا يوسف، ربنا يفتحلك كل أبواب الخير، ويرزقك راحة البال ويفرح قلبك ويبعد عنك كل ضيق.</p>
+  <p>يا رب تحقق كل حاجة نفسك فيها، وتشوف نتيجة تعبك، وتكون دايمًا من الناجحين والمبسوطين.</p>
+  <p>يا رب يحفظك من كل شر، ويكتبلك أيام أجمل من اللي فاتت، ويرزقك بناس صافية تحبلك الخير زي ما بتحبه لنفسك.</p>
+  <strong>ربنا يكرمك يا أخويا ويجعل أيامك كلها فرحة ❤️</strong>
+ </div>
+</section>
+
+<div class="quote reveal">
+ <h2>كلمة أخيرة..</h2>
+ <p>مش لازم أقولك كل يوم إنك غالي، ومش لازم كل حاجة حلوة تتقال في مناسبة. المهم إنك تعرف إن ليك تقدير ومعزة كبيرة، وإنّي بتمنالك الخير من قلبي.</p>
+</div>
+
+<section class="final reveal">
+ <div class="eyebrow">FOREVER WITH RESPECT</div>
+ <h2>YOUSSEF ALI</h2>
+ <div class="line"></div>
+ <p>إلى أخويا وصاحبي.. خليك دايمًا زي ما إنت، بطيبتك وروحك الحلوة وطموحك. متخليش الدنيا تغير فيك الحاجات الجميلة اللي بتميزك. أتمنى أشوفك دايمًا في أحسن مكان وتحقق كل اللي بتحلم بيه.</p>
+ <p style="color:var(--gold);font-size:18px">أخويا مش مجرد صاحبي.. إنت غالي ❤️</p>
+ <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">ارجع للبداية ↑</a>
+</section>
+</main>
+
+<footer>
+ <div style="font:24px 'Playfair Display';color:var(--gold)">YOUSSEF ALI</div>
+ <p>MADE WITH ❤️, LOYALTY & RESPECT</p>
+ <p>© 2026 — A SPECIAL BROTHERHOOD STORY</p>
+</footer>
+
+<script>
+function enter(){
+ document.getElementById('intro').classList.add('hide');
+}
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+let lang='ar';
+const translations={
+ "اقرأ رسالتي ليك ❤️":"READ MY LETTER ❤️",
+ "اكتشف الحكاية":"DISCOVER THE STORY",
+ "افتح الموقع واكتشف الحكاية ←":"OPEN THE STORY ←",
+ "رسالة ليك يا يوسف ❤️":"A LETTER FOR YOU ❤️",
+ "كلام يمكن مش بعرف أقوله كل يوم":"WORDS I DON'T SAY EVERY DAY",
+ "يا يوسف، اسمعني شوية..":"YOUSSEF, LISTEN TO ME..",
+ "إنت مش مجرد صاحب":"MORE THAN A FRIEND",
+ "في فرق كبير بين صاحب وأخ":"THE DIFFERENCE IS REAL",
+ "الأخوّة مش بالدم بس.. ❤️":"BROTHERHOOD IS MORE THAN BLOOD ❤️",
+ "ذكريات لسه جاية":"MEMORIES AHEAD",
+ "لسه العمر قدامنا وفيه حكايات كتير":"MANY MORE STORIES TO COME",
+ "دعوة من قلبي ليك":"A WISH FROM MY HEART",
+ "كلمة أخيرة..":"ONE LAST THING..",
+ "ارجع للبداية ↑":"BACK TO TOP ↑"
+};
+function changeLang(){
+ lang=lang==='ar'?'en':'ar';
+ document.body.classList.toggle('en',lang==='en');
+ document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ document.getElementById('lang').textContent=lang==='ar'?'EN':'AR';
+ document.querySelectorAll('h2,h3,p,a,button').forEach(el=>{
+  if(!el.dataset.original)el.dataset.original=el.textContent;
+  if(lang==='en'){
+   el.textContent=translations[el.dataset.original]||el.dataset.original;
+  }else{
+   el.textContent=el.dataset.original;
+  }
+ });
+}
+// Ambient original synthesized sound
+let audio=null,playing=false;
+function music(){
+ if(!playing){
+  try{
+   audio=new(window.AudioContext||window.webkitAudioContext)();
+   const master=audio.createGain();
+   master.gain.value=.025;
+   master.connect(audio.destination);
+   [110,164.81,220].forEach((f,i)=>{
+    let o=audio.createOscillator(),g=audio.createGain();
+    o.type='sine';o.frequency.value=f;g.gain.value=.35/(i+1);
+    o.connect(g);g.connect(master);o.start();
+   });
+   playing=true;
+   document.querySelector('[onclick="music()"]').textContent='♫ إيقاف';
+  }catch(e){alert('الصوت غير مدعوم في المتصفح')}
+ }else{
+  if(audio)audio.close();
+  audio=null;playing=false;
+  document.querySelector('[onclick="music()"]').textContent='♫ موسيقى';
+ }
+}
+// Golden particles
+const c=document.getElementById('stars'),ctx=c.getContext('2d');
+let pts=[];
+function resize(){c.width=innerWidth;c.height=innerHeight}
+window.addEventListener('resize',resize);resize();
+for(let i=0;i<75;i++)pts.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.7+.4,s:Math.random()*.35+.08});
+function draw(){
+ ctx.clearRect(0,0,c.width,c.height);
+ pts.forEach(p=>{
+  ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);
+  ctx.fillStyle='rgba(215,179,107,.65)';ctx.fill();
+  p.y-=p.s;if(p.y<0){p.y=c.height;p.x=Math.random()*c.width}
+ });
+ requestAnimationFrame(draw);
+}
+draw();
+</script>
+</body>
+</html>
+
